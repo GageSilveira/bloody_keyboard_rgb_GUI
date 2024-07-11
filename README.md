@@ -2,6 +2,8 @@
 
 > This script allows you to set the RGB backlight color on A4Tech Bloody keyboards using a GUI interface.
 
+![Main Window](screenshots/screenshot_main.png)
+
 ### Configuration
 
 - The file 'bloody_keycolor.conf' contains two directorys the top most is the profile directory and the bottom is the 'Set_Bloody_Key_Color.py' script location
@@ -21,7 +23,13 @@
 $ Bloody_KeyColor_GUI.py
 ```
 - This will launch the GUI you can set colors per key by clicking them or set all by using the setall button
+
+![Main Window](screenshots/screenshot_color_picker.png)
+
 - Profiles can be saved and loaded with the 'save' and 'load' buttons
+
+![example_profile loaded](screenshots/screenshot_example.png)
+
 - When you are ready to apply the profile use the parse button to save 'active_profile' to the same location as the helper script
 - Finally use 'run script' to apply the 'active_profile'
 
