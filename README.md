@@ -40,19 +40,19 @@ $ Set_Bloody_Key_Color.py
 
 ### Automatically setting RGB at Boot time
 
--Create a helper script that your systemd service can run
+- Create a helper script that your systemd service can run
 ```setbloodyrgb.sh
 #/bin/bash
 cd /path/to/script
 python /path/to/script/Set_Bloody_Key_Color.py
 ```
--This will run the 'Set_Bloody_KeyColor.py' which will applt whatever is contained in the 'active_profile' produced by the GUI
+- This will run the 'Set_Bloody_KeyColor.py' which will applt whatever is contained in the 'active_profile' produced by the GUI
 -Make it executible 
 ```console
 $ sudo chmod +x setbloodyrgb.sh
 ```
 
--Create a service for systemd to launch at boot time in /etc/systemd/system/
+- Create a service for systemd to launch at boot time in /etc/systemd/system/
 ```bloody-rgb.service
 [Unit]
 Description=Set Bloody RGB on Boot
@@ -66,13 +66,13 @@ StandardOutput=journal
 WantedBy=multi-user.target
 ```
 
--Activate the service 
+- Activate the service 
 ```console
 $ sudo systemctl enable bloody-rgb.service
 $ sudo systemctl start bloody-rgb.service
 ```
 
--At Boot time the helper script will launch and set the RGB based on 'active_profile'
+- At Boot time the helper script will launch and set the RGB based on 'active_profile'
 
 ### Credits
 
