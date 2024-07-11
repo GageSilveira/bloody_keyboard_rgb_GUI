@@ -1361,7 +1361,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_Widget):
         self.ecimalpoint_103.setStyleSheet('QPushButton {background-color: '+colors_working[103]+'; color: black;}') #initialize colors
 
 app = QtWidgets.QApplication(sys.argv)
-app.setStyleSheet('QMainWindow{background-color: #333333;border: 13px solid #222222;}')
+app.setStyleSheet('QMainWindow{background-color: #333333;border: 13px solid #222222;}QColorDialog{background-color: #333333;border: 13px solid #222222;}')
 window = MainWindow()
 window.show()
 app.exec()
