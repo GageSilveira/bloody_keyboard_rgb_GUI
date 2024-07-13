@@ -700,7 +700,7 @@ class Ui_Widget(object):
         self.left_99.setText(_translate("Widget", "Left"))
         self.own_100.setText(_translate("Widget", "Down"))
         self.right_101.setText(_translate("Widget", "Right"))
-        self.numzero_102.setText(_translate("Widget", "Right"))
+        self.numzero_102.setText(_translate("Widget", "0"))
         self.ecimalpoint_103.setText(_translate("Widget", "."))
         self.load.setText(_translate("Widget", "load"))
         self.save.setText(_translate("Widget", "Save"))
